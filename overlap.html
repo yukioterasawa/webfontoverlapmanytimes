@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<style>
+body{padding:0;}
+main{width:300px;max-width:100%;margin:0 auto;}
+canvas{margin:5px 0 20px;width:100%;border:1px solid #333;}
+p{padding:20px 0 0;margin:0;}
+</style>
+<script>
+window.onload=function(){
+	const c1=document.getElementById("c1");
+	const ctx1=c1.getContext("2d");
+	ctx1.font="400 100px 'M PLUS 1p'";
+	ctx1.fillText("税",100,110);
+
+	const c2=document.getElementById("c2");
+	const ctx2=c2.getContext("2d");
+	ctx2.font="700 100px 'M PLUS 1p'";
+	ctx2.fillText("税",100,110);
+
+}
+</script>
+</head>
+<body>
+<main>
+<p style="font-family:'M PLUS 1p', sans-serif;font-weight:400;">M PLUS 1p weight 400</p>
+<canvas id="c1"></canvas>
+
+<p style="font-family:'M PLUS 1p', sans-serif;font-weight:700;">M PLUS 1p weight 700(NOT LOAD)</p>
+<canvas id="c2"></canvas>
+
+</main>
+</body>
+</html>
